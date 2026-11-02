@@ -2,7 +2,7 @@
 <html lang="zh-Hans">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
   <meta name="theme-color" content="#182623" />
   <title>港岛生活志 · Island Lives</title>
   <!-- Standalone offline build. Source: index.html + css/ + js/ -->
@@ -46,10 +46,12 @@ html, body {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   overscroll-behavior-x: none;
+  touch-action: pan-y;
 }
 body { user-select: none; -webkit-user-select: none; }
 button, input, textarea { font: inherit; color: inherit; }
-button { cursor: pointer; border: 0; background: none; }
+button { cursor: pointer; border: 0; background: none; touch-action: manipulation; }
+input { touch-action: manipulation; }
 button:focus-visible, input:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
 h1, h2, h3, h4, p { margin: 0; }
 em { font-style: normal; }
